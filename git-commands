@@ -1,71 +1,125 @@
+# Clona el repositorio desde GitHub a tu máquina local
 git clone https://github.com/joselugaspar/umafactorial.git
 
+# Configura el correo electrónico del usuario globalmente en git
 git config --global user.email "joseluisfg2003@gmail.com"
 
+# Configura el nombre de usuario globalmente en git
 git config --global user.name "joselugaspar"
 
+# Cambia al directorio del repositorio clonado
 cd umafactorial
 
+# Añade el archivo factorial.java al área de preparación
 git add factorial.java
 
+# Realiza un commit con el mensaje "initial commit"
 git commit -m "initial commit"
 
+# Añade nuevamente el archivo factorial.java al área de preparación
 git add factorial.java
 
+# Realiza otro commit con el mensaje "refactorizacion"
 git commit -m "refactorizacion"
 
+# Sube los cambios al repositorio remoto en la rama 'main'
 git push origin main
 
+# Crea y cambia a una nueva rama llamada 'recursivo'
 git checkout -b recursivo
 
+# Añade el archivo factorial.java al área de preparación
 git add factorial.java
 
+# Realiza un commit con el mensaje "implementación recursiva"
 git commit -m "implementación recursiva"
 
+# Sube los cambios al repositorio remoto en la nueva rama 'recursivo'
 git push origin recursivo
 
+# Cambia de nuevo a la rama 'main'
 git checkout main
 
+# Añade el archivo factorial.java al área de preparación
 git add factorial.java
 
+# Realiza un commit con el mensaje "corrección numeros negativos"
 git commit -m "corrección numeros negativos"
 
+# Sube los cambios al repositorio remoto en la rama 'main'
 git push origin main
 
+# Cambia nuevamente a la rama 'recursivo'
 git checkout recursivo
 
+# Añade el archivo factorial.java al área de preparación
 git add factorial.java
 
+# Realiza un commit con el mensaje "Optimizacion"
 git commit -m "Optimizacion"
 
+# Cambia de nuevo a la rama 'main'
 git checkout main
 
+# Fusiona los cambios de la rama 'recursivo' en la rama 'main'
 git merge recursivo
 
+# Crea y cambia a una nueva rama llamada 'refacIO'
 git checkout -b refacIO
 
+# Añade el archivo factorial.java al área de preparación
 git add factorial.java
 
+# Realiza un commit con el mensaje "Refactorizacion de metodo entrada"
 git commit -m "Refactorizacion de metodo entrada"
 
+# Guarda los cambios de manera temporal
 git stash
 
+# Cambia de nuevo a la rama 'main'
 git checkout main
 
+# Añade el archivo factorial.java al área de preparación
 git add factorial.java
 
+# Realiza un commit con el mensaje "Cambio de long a biginteger"
 git commit -m "Cambio de long a biginteger"
 
+# Sube los cambios al repositorio remoto en la rama 'main'
 git push origin main
 
+# Cambia de nuevo a la rama 'refacIO'
 git checkout refacIO
 
+# Recupera los cambios guardados temporalmente
 git stash pop
 
+# Añade el archivo factorial.java al área de preparación
 git add factorial.java
 
+# Realiza un commit con el mensaje "Refactorizacion de metodo de salida"
 git commit -m "Refactorizacion de metodo de salida"
 
+# Cambia de nuevo a la rama 'main'
 git checkout main
 
+# Fusiona los cambios de la rama 'refacIO' en la rama 'main'
 git merge refacIO
+
+# Añade el archivo factorial.java al área de preparación
+git add factorial.java
+
+# Realiza un commit con el mensaje "Mezcla de la rama refacIO"
+git commit -m "Mezcla de la rama refacIO"
+
+# Sube los cambios al repositorio remoto en la rama 'main'
+git push origin main
+
+# Añade el archivo comandos-git.txt al área de preparación
+git add comandos-git.txt
+
+# Realiza un commit con el mensaje "historial de linea de comandos"
+git commit -m "historial de linea de comandos"
+
+# Sube todos los cambios (tanto en la rama actual como en las demás ramas) al repositorio remoto
+git push --all origin
