@@ -115,8 +115,8 @@ git commit -m "Mezcla de la rama refacIO"
 # Sube los cambios al repositorio remoto en la rama 'main'
 git push origin main
 
-# Añade el archivo comandos-git.txt al área de preparación
-git add comandos-git.txt
+# Añade el archivo git-commands (el historial de comandos) al área de preparación
+git add git-commands
 
 # Realiza un commit con el mensaje "historial de linea de comandos"
 git commit -m "historial de linea de comandos"
